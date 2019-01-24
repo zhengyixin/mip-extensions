@@ -76,9 +76,9 @@
     template="mip-template-id"
     src="http://xxx?a=a&b=b"
     id="mip-baobao-list"
-    has-more
-    pnName="pageNum"
-    pn=2
+    hasMore
+    pn=0
+    rn=5
     timeout="3000"
     preLoad>
     <template type="mip-mustache" id="mip-template-id">
@@ -119,7 +119,7 @@
 单位：无    
 默认值：无
 
-### has-more
+### hasMore
 
 说明：是否有点击展开更多功能   
 必选项：否    
@@ -128,27 +128,27 @@
 单位：无    
 默认值：无
 
-### pnName
-
-说明：翻页变量名     
-必选项：否    
-类型：字符串    
-取值范围：无    
-单位：无    
-默认值：pn
-
 ### pn
 
-说明：翻页初始页码，每次请求会自动加 1     
+说明：翻页初始页码    
 必选项：否    
 类型：整数    
 取值范围：无    
 单位：无    
-默认值：1 
+默认值：0 
+
+### rn
+
+说明：翻页步长    
+必选项：否    
+类型：字符串    
+取值范围：无    
+单位：无    
+默认值：5
 
 ### preLoad
 
-说明：异步加载数据，如果添加 `preLoad` 参数，则在初始化时加载第一页内容     
+说明：异步加载数据，如果 `preLoad` 参数不为空，则在初始化时加载第一页内容     
 必选项：否    
 
 ### timeout
