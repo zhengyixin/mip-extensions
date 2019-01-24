@@ -1,0 +1,12 @@
+{
+   "name": "mip-baobao-list",
+   "version": "1.0.0",
+   "description": "宝宝知道异步加载组件",
+   "contributes": {
+      "name": "zhengyixin",
+      "email": "zhengyixin@baidu.com"
+   },
+   "engines": {
+      "mip": ">=1.1.0"
+   }
+}
