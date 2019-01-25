@@ -146,6 +146,7 @@ define(function (require) {
         var url = src;
         if (!src) {
             console.error('mip-list 的 src 属性不能为空');
+            console.log('mip-list 的 src 属性不能为空');
         }
 
         self.pn = element.getAttribute('pn') || 0;
